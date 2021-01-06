@@ -15,4 +15,8 @@ public class Bus {
     public String hasDestination() {
         return this.destination;
     }
+
+    public int hasCapacity() {
+        return this.capacity;
+    }
 }

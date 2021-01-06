@@ -16,4 +16,9 @@ public class BusTest {
         assertEquals("Edinburgh Castle", bus.hasDestination());
     }
 
+    @Test
+    public void hasCapacity() {
+        assertEquals(40, bus.hasCapacity());
+    }
+
 }
