@@ -11,4 +11,8 @@ public class Bus {
         this.capacity = capacity;
         this.passengers = new ArrayList<Person>();
     }
+
+    public String hasDestination() {
+        return this.destination;
+    }
 }

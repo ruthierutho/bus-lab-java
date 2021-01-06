@@ -1,4 +1,7 @@
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class BusTest {
     private Bus bus;
@@ -7,4 +10,10 @@ public class BusTest {
     public void setUp() {
         bus = new Bus("Edinburgh Castle", 40);
     }
+
+    @Test
+    public void hasDestination() {
+        assertEquals("Edinburgh Castle", bus.hasDestination());
+    }
+
 }
