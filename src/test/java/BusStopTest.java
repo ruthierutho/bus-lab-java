@@ -22,4 +22,10 @@ public class BusStopTest {
     public void hasEmptyQueue() {
         assertEquals(0, busStop.queueCount());
     }
+
+    @Test
+    public void addPersonToQueue() {
+        busStop.addPerson(person);
+        assertEquals(1, busStop.queueCount());
+    }
 }
